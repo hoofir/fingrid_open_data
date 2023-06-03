@@ -30,3 +30,4 @@ Technical API documentation for developers:  http://data.fingrid.fi/open-data-ap
 
 ## Availability and uptime
 The open data API is not guaranteed to have 100% uptime. Although maximum uptime is a goal, as with any service disruptions can happen at any point along the networks and Internet between the client application and the API servers. When you register for using the API, we recommend that you opt-in to the email notifications so that we can inform you about changes that affect the use of the API. You can also get information about planned maintenance breaks from the API. It's important that your application is defensive and can handle API downtime gracefully. One such way could be by implementing good caching. Another strategy could be to aim for graceful failure if the API is not available. 
+
