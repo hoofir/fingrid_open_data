@@ -26,13 +26,24 @@ Technical API documentation for developers:  http://data.fingrid.fi/open-data-ap
 - Data update frequency varies by dataset: many datasets have data that is updated hourly, and some datasets include data that is updated in 3 or 5 minute intervals. The update frequency is stated in the dataset description.
 - If you request frequently updated data from an extended date range, you may receive an error message that results from exceeding the maximum allowed API payload. Shorten the date range and request the results in JSON-format. 
 - If you use the API in browser environment, you need to note the requirements and limitations for Cross Origin Resource Sharing ([CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)). 
+ 
 
+## Example of one response  
+<div class="snippet_json" style="display: block;">
+        <pre><code class="hljs json">[
+  {
+    "<span class="hljs-attr">end_time</span>": <span class="hljs-string">"string"</span>,
+    "<span class="hljs-attr">start_time</span>": <span class="hljs-string">"string"</span>,
+    "<span class="hljs-attr">value</span>": <span class="hljs-number">0</span>
+  }
+]</code></pre>
 
+  
 ## Availability and uptime
 The open data API is not guaranteed to have 100% uptime. Although maximum uptime is a goal, as with any service disruptions can happen at any point along the networks and Internet between the client application and the API servers. Make your application defensive that can handle API downtime gracefully. One such way could be by implementing good caching. Another strategy could be to aim for graceful failure if the API is not available. 
 
 
-## Data List
+## List of the available datasets
 
 |   ID | NAME                                                                                     | UNIT      | INTERVAL   |
 |-----:|:-----------------------------------------------------------------------------------------|:----------|:-----------|
