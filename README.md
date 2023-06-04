@@ -19,7 +19,7 @@ Technical API documentation for developers:  http://data.fingrid.fi/open-data-ap
 - For an individual variable, you can get the latest event or events from a specified date/time range. For a set of variables, you can get the latest events.
 - You can access data in JSON, XML or CSV formats.
 - You can make [custom searches](https://data.fingrid.fi/open-data-forms/search/en/) for each dataset. Each dataset has an unique link to the search interface. 
-- Each dataset has a unique `VariableId` number that you need to use in API requests. See them all in [here](https://github.com/hoofir/fingrid_open_data/raw/main/Avoin%2Bdata%2Btietoaineistoluettelo%2B9.6.2021.xlsx). 
+- Each dataset has a unique `VariableId` number that you need to use in API requests. See them all in [here](https://github.com/hoofir/fingrid_open_data/blob/main/README.md#list-of-the-available-datasets). 
 - API-key must be inserted to the http-request header `x-api-key`, not into the URL-address. If you are importing data from the API into an application, it is usually possible to insert the API-key by modifying the request header parameters in your application.
 - You can make 10,000 requests in 24h period with one API-key. Please contact the [administrator](mailto:avoindata@fingrid.fi) if you need to make more requests.
 - Data timestamps are presented in `UTC` (previously as GMT) time format. Correct format for API requests is `YYYY-MM-ddTHH:mm:ssZ` e.g. 2023-04-02T00:00:00+00:00
