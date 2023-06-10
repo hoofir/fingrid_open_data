@@ -3,8 +3,6 @@ Fingrid's open data platform provides machine readable access to datasets throug
 
 
 ## Registration
-Fingrid provides equal service for all users of the open data platform through the free of charge API-access which requires registration.
-
 1. Make sure you have an active email address.
 2. Do [register](https://data.fingrid.fi/open-data-forms/registration/) and approve the license and terms of use. 
 3. You will receive a personal API-key right away. If you don't receive the email, please check your Junk Mail folder.
