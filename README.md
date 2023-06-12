@@ -17,7 +17,7 @@ Fingrid's open data platform provides machine readable access to datasets throug
 4. Choose the data you want and find out its ID from previous step or [here](https://github.com/hoofir/fingrid_open_data/edit/main/README.md#list-of-the-available-datasets-source).
 5. Use `fingrid_api.get_ts()` to get timeseries data, and `fingrid_api.get_latest()` to get the latest value of the corresponding data.
 
-* Make sure you have installed these packages: `pandas`, `requests`
+* Make sure you have installed these packages: `pandas`  `requests`
 
 
 ## Information for Developers
