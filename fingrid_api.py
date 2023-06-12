@@ -41,7 +41,6 @@ def get_ts(api_key: str,
     """
     import pandas as pd
     import requests
-    from dateutil import parser
 
     start_time = start_time + 'T00:00:00+00:00'
     end_time = end_time + 'T23:59:59+00:00'
