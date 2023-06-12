@@ -1,4 +1,4 @@
-# Fingrid Open Datasets via API
+# Fingrid Open Data via API
 Fingrid's open data platform provides machine readable access to datasets through open **REST API** interface.
 
 
