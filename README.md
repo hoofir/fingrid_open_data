@@ -10,7 +10,15 @@ Fingrid's open data platform provides machine readable access to datasets throug
 5. If you want, you can also [delete your account](https://data.fingrid.fi/open-data-forms/leave/) and the related API-key.
 
 
-## How to use the API
+## How to Fetch the Data
+1. Clone the repository into your local machine.
+2. Add the full path to folder `fingrid_open_data` to your system's path via `sys.path.append("path")`.
+3. Run `fingrid_api.data_list()` command to see the full list of the available datasets.
+4. Choose the data you want and find out its ID from previous step or [here](https://github.com/hoofir/fingrid_open_data/edit/main/README.md#list-of-the-available-datasets-source).
+5. Use `fingrid_api.get_events()` to get timeseries data, and `fingrid_api.get_last_event()` to get the latest value of the corresponding data.
+
+
+## Information for Developers
 Technical API documentation for developers:  http://data.fingrid.fi/open-data-api/
 
 - API requests to this endpoint:  https://api.fingrid.fi/
@@ -41,7 +49,7 @@ Technical API documentation for developers:  http://data.fingrid.fi/open-data-ap
 The open data API is not guaranteed to have 100% uptime. Although maximum uptime is a goal, as with any service disruptions can happen at any point along the networks and Internet between the client application and the API servers. Make your application defensive that can handle API downtime gracefully. One such way could be by implementing good caching. Another strategy could be to aim for graceful failure if the API is not available. 
 
 
-## List of the available datasets
+## List of the available datasets ([source](https://fingrid-public.s3-eu-west-1.amazonaws.com/files/Avoin+data+tietoaineistoluettelo+9.6.2021.xlsx))
 
 |   ID | NAME                                                                                     | UNIT      | INTERVAL   |
 |-----:|:-----------------------------------------------------------------------------------------|:----------|:-----------|
