@@ -2,7 +2,7 @@
 Fingrid's open data platform provides machine readable access to datasets through open **REST API** interface.
 
 
-## Registration
+## How to Get Started
 1. Make sure you have an active email address.
 2. Do [register](https://data.fingrid.fi/open-data-forms/registration/) and approve the license and terms of use. 
 3. You will receive a personal API-key right away. If you don't receive the email, please check your Junk Mail folder.
