@@ -8,19 +8,19 @@ def data_list():
     """
     import pandas as pd
     
-    path = "Avoin_data 9.6.2021.xlsx"
+    path = 'Avoin_data 9.6.2021.xlsx'
+    # path = 'https://fingrid-public.s3-eu-west-1.amazonaws.com/files/Avoin+data+tietoaineistoluettelo+9.6.2021.xlsx'
 
-    df = pd.read_excel(path, index_col='ID')
+    df = pd.read_excel(path, index_col='ID') \
+        .drop(columns=['NIMI','URL']) \
+        .rename(columns={'YKSIKKÖ':'UNIT','AIKAVÄLI':'INTERVAL'}) \
+        .to_markdown()
 
-    df = df.drop(columns=['NIMI','URL'])
-
-    df = df.rename(columns={'YKSIKKÖ':'UNIT','AIKAVÄLI':'INTERVAL'})
-
-    return print(df.to_markdown())
+    return print(df)
 
     # ================================================
 
-def get_events(api_key: str,
+def get_ts(api_key: str,
                var_id: int, 
                start_time: str, 
                end_time: str, 
@@ -98,8 +98,9 @@ def get_events(api_key: str,
 
     # ================================================
 
-def get_last_event(api_key: str,
-                   var_id: int):
+def get_latest(api_key: str,
+               var_id: int,
+               ):
     """
     Description:
         This function gets the last event of a data from 
