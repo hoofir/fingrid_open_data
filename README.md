@@ -1,4 +1,4 @@
-# Fingrid Open Datasets via API
+# Fingrid Open Data via API
 Fingrid's open data platform provides machine readable access to datasets through open **REST API** interface.
 
 
@@ -15,7 +15,7 @@ Fingrid's open data platform provides machine readable access to datasets throug
 2. Add the full path to folder `fingrid_open_data` to your system's path via `sys.path.append("C:/.../.../fingrid_open_data/")`.
 3. Run `fingrid_api.data_list()` command to see the full list of the available datasets.
 4. Choose the data you want and find out its ID from previous step or [here](https://github.com/hoofir/fingrid_open_data/edit/main/README.md#list-of-the-available-datasets-source).
-5. Use `fingrid_api.get_events()` to get timeseries data, and `fingrid_api.get_last_event()` to get the latest value of the corresponding data.
+5. Use `fingrid_api.get_ts()` to get timeseries data, and `fingrid_api.get_latest()` to get the latest value of the corresponding data.
 
 
 ## Information for Developers
